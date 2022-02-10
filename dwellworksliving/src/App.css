@@ -1,0 +1,193 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Kundan  http://dwellworksliving.com/cartus/manifest.json */
+
+*{box-sizing: border-box; margin:0px; padding: 0px;}
+.navbar {
+  background: rgba(117,59,189,0.9);
+}
+.navbar {
+  top: auto;
+  left: 0;
+  width: 100%;
+  padding: 0 4em;
+  background: rgba(117,59,189,.9);
+  height: 50px;
+  transition: .3s ease-in-out;
+  margin: 0 auto;
+}
+#sticky-nav, .navbar {
+  position: absolute;
+  bottom: 0;
+}
+.navbar ul.navbar-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar ul.navbar-menu li {
+  margin: 0;
+  position: relative;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.navbar ul.navbar-menu li:first-child a {
+  padding-left: 0;
+}
+.navbar ul.navbar-menu li a {
+  padding: 0.85em 1em;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+}
+.navbar ul.navbar-menu li a:after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 20px;
+  top: 15px;
+  right: 0;
+  background: #fff;
+}
+
+.header{ padding:20px;}
+.banner{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: calc(100vh - 65px - 1.6em);
+    position: relative;
+}
+.client-logo, .dwell-logo {
+  max-width: 200px;
+}
+img {max-width: 100%;}
+
+.logo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0em 0em 0.8em;
+}
+
+
+
+#sticky-nav{
+  position: absolute;
+  bottom: 0;
+}
+.navbar {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 4em;
+  background: rgba(117, 59, 189, 0.9);
+  height: 50px;
+  transition: 0.3s ease-in-out;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.navbar ul.navbar-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar ul.navbar-menu li {
+  margin: 0;
+  position: relative;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.navbar ul.navbar-menu li a {
+  padding: 0.85em 1em;
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+}
+.navbar ul.navbar-menu li a::after {
+  position: absolute;
+  content:'';
+  width: 1px;
+  height: 20px;
+  top: 15px;
+  right: 0;
+  background: #ffffff;
+}
+.navbar ul.navbar-menu li:first-child a {
+  padding-left: 0em;
+}
+.navbar ul.navbar-menu li:last-child a {
+  padding-right: 0em;
+}
+.navbar ul.navbar-menu li:last-child a::after {
+  display: none;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  z-index: 999;
+  background: rgba(117, 59, 189, 1);
+}
+
+.is-sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%);
+  animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
